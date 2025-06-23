@@ -1,0 +1,53 @@
+.certificates {
+  padding: 48px 0;
+  &--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &--swapper {
+    .swiper {
+      padding-bottom: 50px;
+    }
+
+    .swiper-wrapper {
+      gap: 30px;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      color: var(--bf);
+    }
+
+    width: 80%;
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+      right: var(--swiper-navigation-sides-offset, -80px);
+      left: auto;
+      @media (max-width: 700px) {
+        right: var(--swiper-navigation-sides-offset, -40px);
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+      left: var(--swiper-navigation-sides-offset, -80px);
+      right: auto;
+
+      @media (max-width: 700px) {
+        left: var(--swiper-navigation-sides-offset, -40px);
+      }
+    }
+
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+      background-color: var(--ff);
+      border: 1px solid var(--ef);
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--ef) !important;
+    }
+  }
+}

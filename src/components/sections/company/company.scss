@@ -1,0 +1,21 @@
+.company {
+  &--body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  &--description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    p {
+      color: var(--2c);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      vertical-align: middle;
+    }
+  }
+}

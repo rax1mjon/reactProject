@@ -1,0 +1,49 @@
+.news {
+  padding-bottom: 44px;
+  &--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  &--list {
+    display: grid;
+    grid-template-columns: 5fr 4fr 4fr;
+    gap: 30px;
+    @media (max-width: 830px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &--card {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+      max-height: 203px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    span {
+      display: inline-block;
+      margin: 24px 0 8px;
+      color: var(--91);
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 13px;
+      letter-spacing: 0px;
+    }
+
+    p {
+      color: var(--2c);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      vertical-align: middle;
+    }
+  }
+}

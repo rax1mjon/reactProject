@@ -1,0 +1,106 @@
+.info {
+  .container {
+    background: url("../../../assets/hero/bg-2.png") no-repeat;
+    background-size: cover;
+    padding: 24px 20px;
+    box-shadow: 0px 4px 32px 0px #00103d29;
+    border-radius: 15px;
+  }
+  &--wrapper {
+    width: 100%;
+    max-width: 612px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    h2 {
+      font-size: clamp(24px, 6vw, 32px);
+      margin: 0;
+    }
+
+    p {
+      color: var(--2c);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      max-width: 400px;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      padding: 12px 0;
+      width: 100%;
+      max-width: 486px;
+
+      input,
+      textarea {
+        padding: 10px 12px;
+        color: var(--2c);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        border: 1px solid #00103d1f;
+        outline: none;
+
+        &:focus {
+          border-color: var(--ef);
+        }
+
+        &::placeholder {
+          color: var(--91);
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          letter-spacing: 0px;
+        }
+      }
+
+      input {
+        height: 100%;
+      }
+
+      label {
+        display: flex;
+      }
+
+      textarea {
+        grid-column: span 2;
+        height: 80px;
+        resize: none;
+      }
+
+      label,
+      textarea {
+        width: auto;
+        border-radius: 4px;
+      }
+
+      .icon {
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--ef);
+
+        &-box {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #00103d1f;
+          border-right: none;
+          &.focus {
+            border-color: var(--ef);
+          }
+        }
+      }
+    }
+  }
+}
