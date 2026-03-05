@@ -14,7 +14,7 @@ export default class Company extends Component {
   render() {
     return (
       <>
-        <section className="company">
+        <section className="company" id="ОНас">
           <div className="company--wrapper container">
             <h2>
               О компании <span>LEANGROUP</span>

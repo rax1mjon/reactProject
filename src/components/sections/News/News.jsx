@@ -10,7 +10,7 @@ export default class News extends Component {
     let images = [news1, news2, news3];
     return (
       <>
-        <section className="news">
+        <section className="news" id="Новости">
           <div className="container news--wrapper">
             <h2>Новости</h2>
             <ul className="news--list">
@@ -26,7 +26,7 @@ export default class News extends Component {
                 );
               })}
             </ul>
-            <a href="" className="whiteBtn">
+            <a href="#" className="whiteBtn">
               Все новости
             </a>
           </div>

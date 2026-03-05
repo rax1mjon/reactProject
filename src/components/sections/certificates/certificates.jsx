@@ -7,7 +7,7 @@ export default class Certificates extends Component {
   render() {
     return (
       <>
-        <section className="certificates">
+        <section className="certificates" id="Сертификаты">
           <div className="certificates--wrapper container">
             <h2>
               Качество продукции подтверждают <span>сертификаты</span>

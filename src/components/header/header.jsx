@@ -24,7 +24,7 @@ export default class Header extends Component {
         <header className="header">
           <div className="container header--wrapper">
             <div className="header--brand">
-              <img src={logo} alt="site logo ?" />
+                <img src={logo} alt="site logo ?" />
             </div>
             <nav className="nav">
               <ul
@@ -52,9 +52,7 @@ export default class Header extends Component {
                   <a href="#Новости">Новости</a>
                 </li>
                 <li></li>
-                <li>
-                  <a href="#Вакансии">Вакансии</a>
-                </li>
+
                 <li></li>
                 <li style={{ display: "flex", alignItems: "center" }}>
                   <a href="#Контакты">Контакты</a>

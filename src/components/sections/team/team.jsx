@@ -10,7 +10,7 @@ export default class Team extends Component {
     let images = [team1, team2, team3, team4, team5];
     return (
       <>
-        <section className="team">
+        <section className="team" id="НашаKоманда">
           <div className="container team--wrapper">
             <h2>
               Наша <span>команда</span>
@@ -31,9 +31,7 @@ export default class Team extends Component {
                 );
               })}
             </ul>
-            <a  className="whiteBtn">
-              Наша команда
-            </a>
+            <a className="whiteBtn">Наша команда</a>
           </div>
         </section>
       </>

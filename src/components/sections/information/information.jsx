@@ -13,7 +13,7 @@ export default class Information extends Component {
   render() {
     return (
       <>
-        <section className="info">
+        <section className="info" id="Контакты">
           <div className="container">
             <div className="info--wrapper">
               <h2>
@@ -51,7 +51,7 @@ export default class Information extends Component {
                   />
                 </label>
                 <textarea placeholder="Комментарий"></textarea>
-                <button className="btn">Получить информацию</button>
+                <button className="btn" disabled>Получить информацию</button>
               </form>
             </div>
           </div>
